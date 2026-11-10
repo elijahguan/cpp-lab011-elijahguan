@@ -22,7 +22,7 @@ Students should discuss:
 - best-case and worst-case behavior; The best case is when the key is the first entry, but the worst case is when the element doesn't exist, which gives us O(n) time. Inserting a new key becomes O(n log n) which is slower than the linear time complexity of insertion.
 - why duplicate-key handling matters; If the key already exists, insert will return false. This allows each key to be unique so it allows for a many-to-one relationship. 
 - the difference between a search by key and scanning all entries; Searching by key is comparing keys and the latter is scanning entries linearly until it finds a match, giving O(n) in the average and worst cases.
-- trade-offs between sorted vectors and hash-based maps; Using vectors will require sorting after every new insertion but gives linear time for searching. Hash-based map gives amortized O(1) lookup, insertion, and removal, but doesn't keep keys sorted.
+- trade-offs between sorted vectors and hash-based maps; Using vectors will require sorting after every new insertion but gives linear time for searching. Hash-based map gives average O(1) lookup, insertion, and removal, but doesn't keep keys sorted.
 - memory overhead and performance of `keys()` and `values()`. Both visit all entries and build a new vector, so it will be O(n) time and O(n) space. The keys are returned in sorted order and the values are returned in the corresponding order.
 
 ## Big-O focus
